@@ -69,7 +69,7 @@ Following extra libs are supported by the linter natively:
 | Lib          | Description                                                                          |
 |--------------|--------------------------------------------------------------------------------------|
 | mysql        | Globals for oxmysql library (https://github.com/overextended/oxmysql)                |
-| vmenu        | Globals for vmenu (https://github.com/TomGrobbe/vMenu)                               |
+| menuv        | Globals for menuv (https://github.com/ThymonA/menuv)                                |
 | polyzone     | Globals for polyzone (https://github.com/mkafrin/PolyZone)                           |
 | qblocales    | Globals for qb-core locales system (https://github.com/qbcore-framework/qb-core)     |
 | qbgarages    | Globals for qb-garages config (https://github.com/qbcore-framework/qb-garages)       |
