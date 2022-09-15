@@ -86,7 +86,7 @@ stds.cfx_cl_deprecated = {
 }
 
 stds.cfx_cl = {
-    read_globals = {
+    globals = {
         LocalPlayer = {
             fields = {
                 state = {
@@ -97,7 +97,9 @@ stds.cfx_cl = {
                     }
                 }
             }
-        },
+        }
+    },
+    read_globals = {
         "TriggerServerEvent",
         "TriggerLatentServerEvent",
         "RegisterNUICallback",
