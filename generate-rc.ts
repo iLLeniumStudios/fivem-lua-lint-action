@@ -19,7 +19,7 @@ interface CfxNative {
   hash: string
   ns: string
   aliases?: string[]
-  apiset: "client" | "server" | "shared"
+  apiset?: string
   game: "gta5" | "rdr3" | "ny"
 }
 
@@ -52,8 +52,7 @@ const uniqueArray = <T>(a: T[]): T[] => {
 }
 
 const reduceNativesToNames = (results: string[], item: CfxNative): string[] => {
-  let name = item.name || `N_${item.hash}`
-  name = macroCaseToSnake(name)
+  let name = item.name && macroCaseToSnake(item.name) || `N_${item.hash}`
   results.push(name)
   ;(item.aliases || []).forEach(a => {
     if (a.slice(0, 1) === "_") {
@@ -92,7 +91,6 @@ async function fetchAllNatives(): Promise<MappedNativeResponse> {
             natives.push(...Object.values(list))
             return natives
           }, [])
-          .filter(n => !!n.name)
 
         clientNatives.push(
           ...nativesList
