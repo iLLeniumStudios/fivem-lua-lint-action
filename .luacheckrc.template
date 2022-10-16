@@ -240,6 +240,16 @@ stds.menuv = {
     }
 }
 
+stds.ox_lib = {
+    read_globals = {
+        "lib",
+        "cache",
+        "ClearInterval",
+        "SetInterval",
+        "locale",
+    }
+}
+
 -- manifest
 files["**/fxmanifest.lua"].std = "max+cfx_manifest"
 files["**/__resource.lua"].std = "max+cfx_manifest"
