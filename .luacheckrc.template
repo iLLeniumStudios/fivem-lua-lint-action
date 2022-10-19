@@ -75,7 +75,7 @@ stds.cfx_sv = {
         "GetPlayerTokens",
         "PerformHttpRequest",
         "CreateVehicle",
-        "CreateVehicleServerSetter"
+        "CreateVehicleServerSetter",
         %%SERVER_GLOBALS%%
     }
 }
