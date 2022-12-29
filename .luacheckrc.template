@@ -6,7 +6,7 @@ stds.cfx = {
         Citizen = {
             fields = {
                 "Wait", "CreateThread", "SetTimeout", "Await", "Trace",
-                "InvokeNative", "PointerValueIntInitialized"
+                "InvokeNative", "PointerValueIntInitialized", "PointerValueFloatInitialized"
             }
         },
         exports = { other_fields = true },
