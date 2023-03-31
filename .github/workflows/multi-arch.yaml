@@ -9,7 +9,7 @@ env:
   REGISTRY: ghcr.io
   OWNER: ${{ github.repository_owner }}
   BUILDKIT_PROGRESS: plain
-  BUILDX_NO_DEFAULT_ATTESTATIONS: true
+  BUILDX_NO_DEFAULT_ATTESTATIONS: 1
 
 jobs:
   build-and-push-image:
