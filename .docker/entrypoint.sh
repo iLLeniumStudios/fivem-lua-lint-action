@@ -3,13 +3,14 @@ CONFIG_PATH=$3
 LUACHECK_ARGS="--default-config $CONFIG_PATH $1"
 LUACHECK_PATH="$2"
 LUACHECK_CAPTURE_OUTFILE="$GITHUB_WORKSPACE/$4"
+LUACHECK_EXIT_ON_WARN="$5"
 
 # extra luacheck definitions
-if [[ ! -z "$5" ]]; then
+if [[ ! -z "$6" ]]; then
   OLD_DIR=$(pwd)
   # regenerate with extras
   cd /luacheck-fivem/
-  yarn build "$5"
+  yarn build "$6"
   # go back
   cd $OLD_DIR
 fi
@@ -32,6 +33,8 @@ else
 fi
 
 echo "exit => $EXIT_CODE"
-if [ $EXIT_CODE -ge 2 ]; then
+if [ "$LUACHECK_EXIT_ON_WARN" = true ]; then
+ exit $EXIT_CODE
+elif [ $EXIT_CODE -ge 2 ]; then
  exit $EXIT_CODE
 fi

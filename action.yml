@@ -22,6 +22,10 @@ inputs:
     description: "extra definitions to use, in the format of a+b+c"
     required: false
     default: ""
+  fail_on_warnings:
+    description: "If the action should fail on warnings or not"
+    required: false
+    default: "false"
 runs:
   using: "docker"
   image: "Dockerfile"
@@ -30,4 +34,5 @@ runs:
     - ${{ inputs.paths }}
     - ${{ inputs.config_path }}
     - ${{ inputs.capture }}
+    - ${{ inputs.fail_on_warnings }}
     - ${{ inputs.extra_libs }}
