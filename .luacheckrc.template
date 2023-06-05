@@ -128,19 +128,14 @@ stds.cfx_manifest = {
     },
 }
 
-stds.esx_legacy = {
+stds.esx = {
     read_globals = {
-        MySQL = {
-            fields = {
-                "ready",
-                "insert",
-                "update",
-                "scalar",
-                "single",
-                "prepare",
-                "query",
-            }
-        }
+        "ESX",
+        "Locales",
+        "_",
+        "_U",
+        "Translate",
+        "TranslateCap"
     }
 }
 
