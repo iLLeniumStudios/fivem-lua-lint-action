@@ -181,6 +181,130 @@ stds.mysql = {
     }
 }
 
+stds.oxlib = {
+    read_globals = {
+        "cache",
+        "locale",
+        lib = {
+            fields = {
+                "alertDialog",
+                "closeAlertDialog",
+                "setClipboard",
+                "registerContext",
+                "showContext",
+                "hideContext",
+                "getOpenContextMenu",
+                "inputDialog",
+                "closeInputDialog",
+                "registerMenu",
+                "showMenu",
+                "hideMenu",
+                "getOpenMenu",
+                "setMenuOptions",
+                "notify",
+                "progressBar",
+                "progressCircle",
+                "progressActive",
+                "cancelProgress",
+                "addRadialItem",
+                "removeRadialItem",
+                "clearRadialItems",
+                "registerRadial",
+                "hideRadial",
+                "disableRadial",
+                "getCurrentRadialId",
+                "skillCheck",
+                "skillCheckActive",
+                "cancelSkillCheck",
+                "showTextUI",
+                "hideTextUI"
+                "isTextUIOpen",
+                "addAce",
+                "removeAce",
+                "addPrincipal",
+                "removePrincipal",
+                "addCommand",
+                "addKeybind",
+                "onCache",
+                "cache",
+                callback = {
+                    fields = {
+                        "await",
+                        "register"
+                    }
+                },
+                cron = {
+                    fields = {
+                        "new"
+                    }
+                },
+                "disableControls",
+                "getClosestObject",
+                "getClosestPed",
+                "getClosestPlayer",
+                "getClosestVehicle",
+                "getNearbyObjects",
+                "getNearbyPeds",
+                "getNearbyPlayers",
+                "getNearbyVehicles",
+                "locale",
+                "logger",
+                math = {
+                    fields = {
+                        "toscalars",
+                        "tovector",
+                        "torgba",
+                        "tohex",
+                        "groupdigits"
+                    }
+                },
+                points = {
+                    fields = {
+                        "new",
+                        "getAllPoints",
+                        "getNearbyPoints",
+                        "getClosestPoint",
+                    }
+                },
+                raycast = {
+                    fields = {
+                        "cam"
+                    }
+                },
+                "requestAnimDict",
+                "requestAnimSet",
+                "requestModel",
+                "requestStreamedTextureDict",
+                "requestNamedPtfxAsset",
+                "requestScaleformMovie",
+                "requestWeaponAsset",
+                table = {
+                    fields = {
+                        "contains",
+                        "matches",
+                        "deepclone",
+                        "merge",
+                        "freeze",
+                        "isFrozen"
+                    }
+                },
+                "getVehicleProperties",
+                "setVehicleProperties",
+                "versionCheck",
+                "checkDependency",
+                "waitFor",
+                zones = {
+                    fields = {
+                        "poly",
+                        "box",
+                        "sphere"
+                    }
+                }
+            }
+        }
+    }
+}
+
 stds.polyzone = {
     read_globals = {
         "PolyZone",
