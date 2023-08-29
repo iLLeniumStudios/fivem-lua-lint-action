@@ -217,7 +217,7 @@ stds.oxlib = {
                 "skillCheckActive",
                 "cancelSkillCheck",
                 "showTextUI",
-                "hideTextUI"
+                "hideTextUI",
                 "isTextUIOpen",
                 "addAce",
                 "removeAce",
