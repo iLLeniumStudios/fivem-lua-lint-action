@@ -139,6 +139,95 @@ stds.esx = {
     }
 }
 
+stds.qbox = {
+    read_globals = {
+        "QBCore"
+    }
+}
+
+stds.qbox_playerdata = {
+    read_globals = {
+        "QBCore",
+        "PlayerData",
+        "OnPlayerData"
+    }
+}
+
+stds.qbox_utils = {
+    read_globals = {
+        "GetCoordsFromEntity",
+        "GetPlate",
+        "DebugPrint",
+        "CommaValue",
+        "RandomLetter",
+        "RandomNumber",
+        "RandomNumberOrLetter",
+        "GenerateRandomPlate",
+        "HasItem",
+        string = {
+            fields = {
+                "split",
+                "trim",
+                "firstToUpper"
+            }
+        },
+        math = {
+            fields = {
+                "round"
+            }
+        }
+    }
+}
+
+stds.qbox_utils_sv = {
+    read_globals = {
+        "SpawnVehicle",
+        "KickWithReason",
+        "IsLicenseInUse"
+    }
+}
+
+stds.qbox_utils_cl = {
+    read_globals = {
+        "DrawText2D",
+        "DrawText3D",
+        "WaitFor",
+        "GetEntityAndNetIdFromBagName",
+        "EntityStateHandler",
+        "PlayAnim",
+        "GetEntities",
+        "GetVehicles",
+        "GetObjects",
+        "GetPeds",
+        "GetPickups",
+        "GetPlayersInScope",
+        "GetClosestEntity",
+        "GetClosestPed",
+        "GetClosestObject",
+        "GetClosestPlayer",
+        "GetPlayersFromCoords",
+        "GetClosestBone",
+        "GetBoneDistance",
+        "AttachProp",
+        "GetVehicleDisplayName",
+        "GetVehicleMakeName",
+        "IsVehicleSpawnClear",
+        "StartParticleAtCoord",
+        "StartParticleOnEntity",
+        "GetStreetNameAtCoords",
+        "GetZoneAtCoords",
+        "GetCardinalDirection",
+        "GetCurrentTime",
+        "GetGroundZCoord",
+        "ClearAllVehicleExtras",
+        "ChangeVehicleExtra",
+        "SetVehicleExtras",
+        "MaleNoGloves",
+        "FemaleNoGloves",
+        "IsWearingGloves"
+    }
+}
+
 stds.mysql = {
     read_globals = {
         MySQL = {
