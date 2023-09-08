@@ -154,6 +154,20 @@ stds.qbox_playerdata = {
 }
 
 stds.qbox_utils = {
+    globals = {
+        math = {
+            fields = {
+                "round"
+            }
+        },
+        string = {
+            fields = {
+                "split",
+                "trim",
+                "firstToUpper"
+            }
+        },
+    },
     read_globals = {
         "GetCoordsFromEntity",
         "GetPlate",
@@ -163,19 +177,7 @@ stds.qbox_utils = {
         "RandomNumber",
         "RandomNumberOrLetter",
         "GenerateRandomPlate",
-        "HasItem",
-        string = {
-            fields = {
-                "split",
-                "trim",
-                "firstToUpper"
-            }
-        },
-        math = {
-            fields = {
-                "round"
-            }
-        }
+        "HasItem"
     }
 }
 
