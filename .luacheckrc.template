@@ -147,7 +147,7 @@ stds.qbox = {
 
 stds.qbox_playerdata = {
     read_globals = {
-        "QBCore",
+        "QBX",
         "PlayerData",
         "OnPlayerData"
     }
