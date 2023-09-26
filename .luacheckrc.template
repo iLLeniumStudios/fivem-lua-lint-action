@@ -141,7 +141,7 @@ stds.esx = {
 
 stds.qbox = {
     read_globals = {
-        "QBCore"
+        "QBX"
     }
 }
 
