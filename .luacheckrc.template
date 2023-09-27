@@ -141,12 +141,14 @@ stds.esx = {
 
 stds.qbox = {
     read_globals = {
+        "QBCore",
         "QBX"
     }
 }
 
 stds.qbox_playerdata = {
     read_globals = {
+        "QBCore",
         "QBX",
         "PlayerData",
         "OnPlayerData"
