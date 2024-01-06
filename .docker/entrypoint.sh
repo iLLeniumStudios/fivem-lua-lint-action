@@ -17,6 +17,8 @@ fi
 
 EXIT_CODE=0
 
+echo "Args => 1: $1, 2: $2, 3: $3, 4: $4, 5: $5, 6: $6, 7: $7"
+
 cd $GITHUB_WORKSPACE 
 
 echo "outfile => $LUACHECK_CAPTURE_OUTFILE"
