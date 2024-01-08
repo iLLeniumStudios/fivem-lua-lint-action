@@ -239,6 +239,7 @@ stds.mysql = {
                 "query",
                 "update",
                 "scalar",
+                "rawExecute",
                 "single",
                 "insert",
                 "transaction",
