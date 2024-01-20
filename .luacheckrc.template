@@ -155,80 +155,53 @@ stds.qbox_playerdata = {
     }
 }
 
-stds.qbox_utils = {
+stds.qbox_lib = {
     globals = {
-        math = {
+        qbx = {
             fields = {
-                "round"
+                armsWithoutGloves = {
+                    fields = {
+                        "male",
+                        "female"
+                    }
+                },
+                string = {
+                    fields = {
+                        "trim",
+                        "capitalize"
+                    }
+                },
+                math = {
+                    fields = {
+                        "round"
+                    }
+                },
+                table = {
+                    fields = {
+                        "mapBySubfield"
+                    }
+                },
+                "getVehiclePlate",
+                "generateRandomPlate",
+                "getCardinalDirection",
+                "spawnVehicle",
+                "drawText2d",
+                "drawText3d",
+                "getEntityAndNetIdFromBagName",
+                "entityStateHandler",
+                "deleteVehicle",
+                "getVehicleDisplayName",
+                "getVehicleMakeName",
+                "getStreetName",
+                "getZoneName",
+                "setVehicleExtra",
+                "resetVehicleExtras",
+                "setVehicleExtras",
+                "isWearingGloves",
+                "loadAudioBank",
+                "playAudio"
             }
-        },
-        string = {
-            fields = {
-                "split",
-                "trim",
-                "firstToUpper"
-            }
-        },
-    },
-    read_globals = {
-        "GetCoordsFromEntity",
-        "GetPlate",
-        "DebugPrint",
-        "CommaValue",
-        "RandomLetter",
-        "RandomNumber",
-        "RandomNumberOrLetter",
-        "GenerateRandomPlate",
-        "HasItem"
-    }
-}
-
-stds.qbox_utils_sv = {
-    read_globals = {
-        "SpawnVehicle",
-        "KickWithReason",
-        "IsLicenseInUse"
-    }
-}
-
-stds.qbox_utils_cl = {
-    read_globals = {
-        "DrawText2D",
-        "DrawText3D",
-        "WaitFor",
-        "GetEntityAndNetIdFromBagName",
-        "EntityStateHandler",
-        "PlayAnim",
-        "GetEntities",
-        "GetVehicles",
-        "GetObjects",
-        "GetPeds",
-        "GetPickups",
-        "GetPlayersInScope",
-        "GetClosestEntity",
-        "GetClosestPed",
-        "GetClosestObject",
-        "GetClosestPlayer",
-        "GetPlayersFromCoords",
-        "GetClosestBone",
-        "GetBoneDistance",
-        "AttachProp",
-        "GetVehicleDisplayName",
-        "GetVehicleMakeName",
-        "IsVehicleSpawnClear",
-        "StartParticleAtCoord",
-        "StartParticleOnEntity",
-        "GetStreetNameAtCoords",
-        "GetZoneAtCoords",
-        "GetCardinalDirection",
-        "GetCurrentTime",
-        "GetGroundZCoord",
-        "ClearAllVehicleExtras",
-        "ChangeVehicleExtra",
-        "SetVehicleExtras",
-        "MaleNoGloves",
-        "FemaleNoGloves",
-        "IsWearingGloves"
+        }
     }
 }
 
