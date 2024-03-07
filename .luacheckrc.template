@@ -113,13 +113,13 @@ stds.cfx_cl = {
 stds.cfx_manifest = {
     read_globals = {
         "author", "description", "repository", "version",
-        "rdr3_warning", "fx_version", 
+        "rdr3_warning", "fx_version",
         "games", "game", "authors", "author",
         "server_scripts", "server_script",
         "client_scripts", "client_script",
         "shared_scripts", "shared_script",
         "ui_page", "files", "file",
-        "export", "exports", "replace_level_meta", 
+        "export", "exports", "replace_level_meta",
         "data_file", "this_is_a_map", "server_only",
         "loadscreen", "dependency", "dependencies",
         "provide", "lua54", "disable_lazy_natives",
@@ -333,6 +333,6 @@ files["**/shared/**/*.lua"].std="max+cfx+cfx_sv+cfx_cl_deprecated+cfx_cl%%EXTRA%
 max_line_length = 1100
 max_cyclomatic_complexity = 200
 color = true
-ignore = {'611', '111', '614'}
+ignore = {'611', '111', '614', '212'}
 std = "max+cfx+cfx_sv+cfx_cl_deprecated+cfx_cl%%EXTRA%%"
 operators = {"+=", "-=", "*=", "/="}
