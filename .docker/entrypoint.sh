@@ -19,14 +19,14 @@ EXIT_CODE=0
 
 echo "Args => 1: $1, 2: $2, 3: $3, 4: $4, 5: $5, 6: $6, 7: $7"
 
-cd $GITHUB_WORKSPACE 
+cd $GITHUB_WORKSPACE
 
 echo "outfile => $LUACHECK_CAPTURE_OUTFILE"
 
 if [[ ! -z "$LUACHECK_CAPTURE_OUTFILE" ]]; then
   echo "exec => luacheck $LUACHECK_ARGS $LUACHECK_PATH 2>>$LUACHECK_CAPTURE_OUTFILE"
   luacheck --operators "+=" $LUACHECK_ARGS $LUACHECK_PATH >$LUACHECK_CAPTURE_OUTFILE 2>&1 || true
-  
+
   echo "exec => luacheck $LUACHECK_ARGS --formatter default $LUACHECK_PATH"
   luacheck --operators "+=" $LUACHECK_ARGS --formatter default $LUACHECK_PATH || EXIT_CODE=$?
 else
