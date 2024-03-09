@@ -178,7 +178,8 @@ stds.qbox_lib = {
                 },
                 table = {
                     fields = {
-                        "mapBySubfield"
+                        "mapBySubfield",
+                        "size"
                     }
                 },
                 "getVehiclePlate",
