@@ -217,6 +217,8 @@ stds.qbox_lib = {
                 "deleteVehicle",
                 "getVehicleDisplayName",
                 "getVehicleMakeName",
+                "getVehicleModName",
+                "getVehicleLiveryName",
                 "getStreetName",
                 "getZoneName",
                 "setVehicleExtra",
