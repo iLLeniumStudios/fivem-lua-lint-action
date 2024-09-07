@@ -83,6 +83,7 @@ stds.cfx = {
         "quat",
         "qua",
         "joaat",
+        "source",
         %%SHARED_GLOBALS%%
     }
 }
@@ -90,7 +91,6 @@ stds.cfx = {
 stds.cfx_sv = {
     globals = { "GlobalState" },
     read_globals = {
-        "source",
         "TriggerClientEvent",
         "TriggerLatentClientEvent",
         "RegisterServerEvent",
